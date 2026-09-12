@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="SAU IOT68"
+        android:label="SAU IOT 69"
         android:name="${applicationName}"
         android:icon="@mipmap/launcher_icon">
         <activity

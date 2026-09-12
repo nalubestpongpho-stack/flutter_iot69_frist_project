@@ -1,7 +1,5 @@
-// ignore_for_file: sort_child_properties_last
-
 import 'package:flutter/material.dart';
-import 'package:flutter_iot69_frist_project/views/login_ui.dart';
+import 'login_ui.dart';
 
 class HomeUI extends StatelessWidget {
   const HomeUI({super.key});
@@ -9,113 +7,113 @@ class HomeUI extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 247, 246, 246),
+      backgroundColor: const Color.fromARGB(255, 255, 255, 255),
       body: Center(
         child: Column(
           children: [
-            SizedBox(
-              height: 100.0,
-            ),
+            const SizedBox(height: 80),
+
             Image.asset(
               'assets/images/img_dev1.png',
-              height: 250.5,
+              height: 180,
             ),
-            SizedBox(
-              height: 75.0,
-            ),
+
+            const SizedBox(height: 25),
+
             Image.asset(
               'assets/images/img_dev2.png',
+              height: 70,
             ),
-            SizedBox(
-              height: 25.0,
-            ),
+
+            const SizedBox(height: 20),
+
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
                   'SAU',
                   style: TextStyle(
-                    fontSize: 35.0,
+                    fontSize: 30,
                     fontWeight: FontWeight.bold,
-                    color: const Color.fromARGB(255, 3, 10, 110),
+                    color: const Color.fromARGB(255, 2, 0, 104),
                   ),
                 ),
-                Text(
+                const Text(
                   'Developer',
                   style: TextStyle(
-                    fontSize: 35.0,
-                    color: const Color.fromARGB(255, 0, 0, 0),
+                    fontSize: 30,
+                    color: Color.fromARGB(255, 29, 29, 29),
                   ),
                 ),
               ],
             ),
-            SizedBox(
-              height: 25.0,
-            ),
+
+            const SizedBox(height: 20),
+
+            // Login
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => LoginUI(),
+                    builder: (context) => const LoginUI(),
                   ),
                 );
               },
-              child: Text(
+              style: ElevatedButton.styleFrom(
+                fixedSize: const Size(300, 55),
+                backgroundColor: const Color.fromARGB(255, 6, 0, 92),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8),
+                ),
+              ),
+              child: const Text(
                 'Login',
                 style: TextStyle(
                   color: Colors.white,
                 ),
               ),
-              style: ElevatedButton.styleFrom(
-                fixedSize: Size(
-                  370,
-                  70,
-                ),
-                backgroundColor: const Color.fromARGB(255, 1, 36, 65),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10.0),
-                ),
-              ),
             ),
-            SizedBox(
-              height: 18.0,
-            ),
+
+            const SizedBox(height: 12),
+
+            // Register
             OutlinedButton(
               onPressed: () {},
-              child: Text(
+              style: OutlinedButton.styleFrom(
+                fixedSize: const Size(300, 55),
+                backgroundColor: Colors.white,
+                side: const BorderSide(
+                  color: Colors.grey,
+                ),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8),
+                ),
+              ),
+              child: const Text(
                 'Register',
                 style: TextStyle(
                   color: Colors.black,
                 ),
               ),
-              style: OutlinedButton.styleFrom(
-                fixedSize: Size(
-                  370,
-                  70,
-              ),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(10.0),
-              ),
-              ),
             ),
-            SizedBox(
-              height: 80.0,
-            ),
-            Text(
-              'Created by NBest SAU',
+
+            const SizedBox(height: 50),
+
+            const Text(
+              'Created By phongsaphon jaideesakunee',
               style: TextStyle(
-                color: const Color.fromARGB(255, 15, 1, 212),
-              fontSize: 17,
-              fontWeight: FontWeight.bold,
+                fontSize: 12,
+                fontWeight: FontWeight.bold,
+                color: Color.fromARGB(255, 0, 4, 66),
               ),
             ),
-            Text(
+
+            const Text(
               'มหาวิทยาลัยเอเชียอาคเนย์',
               style: TextStyle(
-                color: const Color.fromARGB(255, 247, 181, 0),
-              fontSize: 17,
-              fontWeight: FontWeight.bold,
+                fontSize: 12,
+                color: Color.fromARGB(255, 241, 198, 2),
               ),
             ),
           ],
