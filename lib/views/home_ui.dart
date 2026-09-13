@@ -101,7 +101,7 @@ class HomeUI extends StatelessWidget {
             const SizedBox(height: 50),
 
             const Text(
-              'Created By phongsaphon jaideesakunee',
+              'Created By NBest IOT68',
               style: TextStyle(
                 fontSize: 12,
                 fontWeight: FontWeight.bold,
